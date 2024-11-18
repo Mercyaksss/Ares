@@ -1,0 +1,38 @@
+footer{
+    height: 300px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: var(--purple-text);
+}
+footer p{
+    font-size: 100px;
+    margin: 0;
+    padding-top: 80px;
+    color: #fff;
+}
+
+
+/* Medium screens (tablets, etc.) */
+@media (max-width: 1024px) {
+    footer {
+        height: 200px; /* Reduce height */
+    }
+
+    footer p {
+        font-size: 60px; /* Decrease font size */
+        padding-top: 50px; /* Adjust padding */
+    }
+}
+
+/* Small screens (mobile devices) */
+@media (max-width: 768px) {
+    footer {
+        height: 150px; /* Further reduce height */
+    }
+
+    footer p {
+        font-size: 40px; /* Smaller font size for better fit */
+        padding-top: 30px; /* Reduce padding */
+    }
+}

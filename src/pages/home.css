@@ -1,0 +1,88 @@
+.main {
+    width: 85%;
+    margin: auto;
+}
+.hero {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    background-image: url('/home/zeena/Desktop/frontend/public/assets/background.png');
+    color: #fff;
+}
+.hero img{
+    width: 100%;
+}
+.hero h1 {
+    font-size: 70px;
+    padding-top: 100px;
+    margin: auto;
+}
+.hero p {
+    font-size: 20px;
+    margin: 0;
+}
+h2 {
+    font-size: 35px;
+    /* color: #331b36; */
+    color: var(--darkest-purple);
+    font-weight: 300;
+}
+.create-campaign {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin-top: 100px;
+    font-size: 18px;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+}
+.create-campaign:hover{
+    background-color: var(--hover-color);
+}
+
+/* Medium screens (tablets, etc.) */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 50px; /* Slightly smaller for medium screens */
+    }
+
+    .hero p {
+        font-size: 18px; /* Adjust for better readability */
+    }
+
+    h2 {
+        font-size: 30px; /* Scale down for medium screens */
+    }
+
+    .create-campaign {
+        font-size: 16px; /* Adjust button text size */
+    }
+}
+
+/* Small screens (mobile devices) */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 55px; /* Smaller for small screens */
+    }
+
+    .hero p {
+        font-size: 18px; /* Further reduce for small screens */
+    }
+
+    h2 {
+        font-size: 25px; /* Adjust heading size */
+    }
+
+    .create-campaign {
+        font-size: 14px; /* Smaller button text */
+        width: 150px; /* Narrower button for small screens */
+        height: 40px; /* Adjust height */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 45px;
+    }
+}

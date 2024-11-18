@@ -1,0 +1,27 @@
+.xyz p{
+    margin: 0;
+    font-size: 12px;
+    padding-left: 90%;
+}
+.progressbar-container{
+    position: relative;
+    margin-bottom: 30px;
+    
+}
+.progressbar{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(216, 216, 216);
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.fill{
+    position: absolute;
+    top: 20%;
+    width: 80%;
+    height: 10px;
+    background-color: var(--purple-text);
+    margin: 10px auto;
+    border-radius: 10px;
+}

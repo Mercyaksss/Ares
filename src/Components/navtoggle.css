@@ -1,0 +1,10 @@
+.toggle{
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    color: var(--purple-text);
+    width: 200px;
+    height: 600px;
+    background-color: var(--nav-color);
+
+}

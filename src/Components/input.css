@@ -1,0 +1,43 @@
+.input-container{
+    text-align: left;
+    margin-bottom: 15px;
+}
+.input-container p{
+    margin-bottom: 2px;
+    color: var(--darkest-purple);
+    font-size: 12px;
+}
+.input-container input{
+    width: 93%;
+    padding-left: 2%;
+    height: 40px;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid var(--darkest-purple);
+    background-color: var(--hover-color);
+    color: var(--darkest-purple);
+    font-size: 15px;
+}
+.input-container input::placeholder{
+    color: var(--darkest-purple);
+}
+.text-area{
+    text-align: left;
+    color: var(--darkest-purple);
+}
+.text-area p{
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+textarea{
+    width: 93%;
+    padding-left: 2%;
+    outline: none;
+    border: 1px solid var(--darkest-purple);
+    border-radius: 8px;
+    background-color: var(--hover-color);
+}
+textarea::placeholder{
+    color: var(--darkest-purple);
+    font-family: Poppins, sans-serif;
+}

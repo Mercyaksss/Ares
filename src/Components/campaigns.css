@@ -1,0 +1,144 @@
+.campaign-card{
+    width: 295px;
+    height: 420px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0;
+}
+.campaign-image{
+    width: 94%;
+    height: 250px;
+    margin-top: 10px;
+}
+.campaign-title{
+    /* background-color:#613268; */
+    font-size: 18px;
+    margin: auto;
+    max-width: 95%;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.campaign-description{
+    font-size: 14px;
+    max-width: 94%;
+    max-height: 40px;
+    margin: auto;
+    color: rgb(99, 98, 98); 
+    /* background-color: aqua; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.campaigns-grid-container {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--darkest-purple);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: max-height 0.3s ease; /* Optional: if you'd like a smooth transition */
+}
+.campaigns-grid {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    border-radius: 10px;
+    justify-items: center;
+    padding: 10px 0;
+}
+
+.see-all {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid var(--darkest-purple);
+    width: 100%;
+    height: 50px;
+    margin: 15px auto;
+    font-size: 16px;
+    color: var(--darkest-purple);
+}
+.progress-container{
+    /* background-color: aqua; */
+    width: 94%;
+    margin: auto;
+}
+
+@media (max-width: 1514px) {
+    .campaigns-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .campaign-card {
+        width: 400px; 
+    }
+}
+
+@media (max-width: 1102px) {
+    .campaigns-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .campaign-card {
+        width: 280px;
+    }
+}
+
+/* Medium screens (tablets, etc.) */
+@media (max-width: 1032px) {
+    .campaigns-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .campaign-card {
+        width: 400px; 
+    }
+}
+
+/* Small screens (mobile devices) */
+@media (max-width: 768px) {
+    .campaigns-grid {
+        grid-template-columns: 1fr; /* Single column for small screens */
+        gap: 20px; /* Increase spacing for readability */
+    }
+
+    .campaign-card {
+        width: 100%; /* Full width for small screens */
+    }
+}
+
+/* Extra small screens (mobile devices, width <= 500px) */
+@media (max-width: 600px) {
+    .campaigns-grid {
+        grid-template-columns: 1fr; /* Single column for better stacking */
+        gap: 20px; /* Maintain spacing for readability */
+        padding: 15px 0; /* Adjust padding for smaller screens */
+    }
+
+    .campaign-card {
+        width: 100%; /* Full width for the card */
+        height: auto;
+        margin: 0 auto; /* Center the card horizontally */
+        padding-bottom: 10px;
+    }
+
+    .campaign-image {
+        width: 94%; /* Adjust image size for smaller screens */
+        height: 250px; /* Maintain aspect ratio */
+    }
+
+    .campaign-title {
+        font-size: 16px; /* Slightly smaller title font size */
+    }
+
+    .campaign-description {
+        font-size: 12px; /* Slightly smaller description font size */
+        max-height: none; /* Allow description to flow naturally */
+        white-space: normal; /* Prevent text cutoff */
+    }
+}
